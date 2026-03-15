@@ -1,0 +1,60 @@
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.current-number, .timer {
+    font-size: 18px;/*文字大小*/
+    font-weight: bold;
+}
+
+.restart-btn {
+    background-color: #ff4444;
+    color: white;
+}
+
+.record-btn {
+    background-color: #4285f4;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 45px);
+    justify-content: center; /* 将整个网格水平居中 */
+    row-gap: 3px;    /* 竖间距 */
+    column-gap: 3px;  /* 横间距 */
+    margin-top: 30px;
+}
+
+.grid-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 45px;  /* 调整这个值改变格子大小 */
+    height: 45px; /* 调整这个值改变格子大小 */
+    font-size: 18px;/*文字大小*/
+}
+
+.grid-cell.clicked {
+    background-color: #272525;
+    cursor: default;
+}

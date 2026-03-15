@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Click Game</title>
+    <style>
+        .start-container {
+            text-align: center;
+            margin-top: 100px;
+        }
+        .title {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .start-btn {
+            background-color: #ff4444;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+        .record-btn {
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="start-container">
+        <div class="title">CLICK NUMBER</div>
+        <div class="btn-group">
+            <button class="start-btn" onclick="window.location.href='game.html'">START</button>
+            <button class="record-btn" onclick="window.location.href='record.html'">VIEW RECORDS</button>
+        </div>
+    </div>
+</body>
+</html>

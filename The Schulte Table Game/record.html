@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Records</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/record.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* 在原有的样式基础上添加以下按钮样式 */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .next-game-btn {
+            background-color: #4CAF50; /* 绿色 */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .home-btn {
+            background-color: #f44336; /* 红色 */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .next-game-btn:hover {
+            background-color: #45a049;
+        }
+        
+        .home-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+    <div class="record-container">
+        <h1>Game Records</h1>
+        <div class="best-record">
+            <h2>Best Time: <span id="best-time">--</span></h2>
+        </div>
+        <div class="chart-container">
+            <canvas id="time-chart"></canvas>
+        </div>
+        <div class="records-list" id="records-list">
+            <!-- Records will be populated here -->
+        </div>
+        <div class="button-group">
+            <button class="next-game-btn" onclick="window.location.href='game.html'">Start Next Game</button>
+            <button class="home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+    <script src="js/record.js"></script>
+</body>
+</html>

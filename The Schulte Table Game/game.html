@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Click Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-info">
+            <div class="current-number">Current: <span id="current-num">00</span></div>
+            <div class="timer">Time: <span id="time">0s</span></div>
+            <button id="restart-btn" class="restart-btn">Restart</button>
+            <button id="record-btn" class="record-btn">Records</button>
+        </div>
+        <div class="grid-container" id="grid"></div>
+    </div>
+    <div id="result-modal" class="modal">
+        <div class="modal-content">
+            <h2>Congratulations!</h2>
+            <p>You completed the game in <span id="final-time"></span></p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
