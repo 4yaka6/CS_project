@@ -6,7 +6,7 @@
 
 ## Game Preview
 
-![Game Display](/resource/gamedisplay.jpg)
+![Game Display](./resource/gamedisplay.jpg)
 
 ---
 
@@ -19,4 +19,4 @@ This project runs entirely locally, based on CSS and JavaScript, and tracks your
 ## Best Scores Display
 The top five scores will be displayed like this.  
 
-![Top 5 Scores Example](/resource/p1.jpg)  
+![Top 5 Scores Example](./resource/p1.jpg)  
